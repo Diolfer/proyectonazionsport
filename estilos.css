@@ -1,0 +1,305 @@
+*{
+    /*Para que no sobre pequeños espacios en los laterales*/
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+header{
+    width: 100%;
+    background: rgb(0, 0, 0);
+    height: 70px;
+}
+.ancho{
+    width: 80%;
+    height: 70px;
+    background: rgb(0, 0, 0);
+    margin: auto;
+}
+
+
+.logo{
+    width: 30%;
+    height: 70px;
+    background: rgb(0, 0, 0);
+    float: left;
+    padding-top: 10px;
+    box-sizing: border-box;
+    font-family: Lobster;
+    src: url(Fuentes/Lobster-Regular.ttf);
+}
+.logo p a{
+    color: #ffffff;
+    font-size: 40px;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav{
+    width: 70%;
+    height: 70px;
+    background: rgb(0, 0, 0);
+    float: left;  
+    text-align: right; 
+    padding-top: 24px;
+    box-sizing: border-box;
+}
+nav ul li{
+    display: inline-block; 
+}
+nav ul li a{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-left: 15px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-family: PermanentMarke;
+}
+
+/*Para el color de las letras al seleccionar*/
+nav ul li a:hover{
+    color: rgb(10, 8, 172);
+}
+/*Submenu*/
+.Desple{
+    position: absolute;
+	background: rgb(0, 0, 0);
+	width: 10%;
+	visibility: hidden;
+	opacity: 0;
+    transition: opacity 1.5s;
+    text-align: left;
+}
+.Desple li a{
+    display: block;
+	padding: 15px;
+	color: #fff;
+	font-family: 'Open sans';
+    text-decoration: none;
+}
+nav li:hover .Desple{
+    visibility: visible;
+    opacity: 1;
+}
+/*fuente o tipo de letra*/
+@font-face{
+    font-family: Permanent Marker;
+    src: url(FUENTES/Pacifico-Regular.ttf)
+}
+
+/*pies de página*/
+footer{
+    position: relative;
+    margin-top: -10px;
+    width: 100%;
+    padding: 50 px;
+    clear: both;
+    background: black;
+    text-align: center;
+    color: #fff;
+
+}
+@font-face{
+    font-family: Galada;
+    src: url(FUENTES/Galada-Regular.ttf)
+}
+------------------
+body {
+    background: rgb(247, 247, 247);
+    margin: 0;
+    font-family: monospace;
+
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+}
+
+/*Estilos de la galeria*/
+
+.galeria {
+    width: 100%;
+    margin: auto;
+    list-style: none;
+    padding: 20px;
+    box-sizing: border-box;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.galeria li {
+    margin: 10px;
+}
+
+.galeria img {
+    width: 550px;
+    height: 500px;
+}
+
+/*Estilos del modal*/
+
+.modal {
+    display: none;
+}
+
+.modal:target {
+    
+    display: block;
+    position: fixed;
+    background: rgba(0,0,0,0.8);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.modal h3 {
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.imagen {
+    width: 100%;
+    height: 70%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen a {
+    color: #fff;
+    font-size: 40px;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.imagen a:nth-child(2) {
+    margin: 0;
+    height: 100%;
+    flex-shrink: 2;
+}
+
+.imagen img {
+    width: 500px;
+    height: 100%;
+    max-width: 100%;
+    border: 7px solid #fff;
+    box-sizing: border-box;
+}
+
+.cerrar {
+    display: block;
+    background: #fff;
+    width: 25px;
+    height: 25px;
+    margin: 15px auto;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000;
+    padding: 5px;
+    border-radius: 50%;
+    line-height: 25px;
+}
+
+/*para espacio  br*/
+/*Para contactos*/
+.contenedor .form .form-header .form-title{
+font-weight: normal;
+font-family: sans-serif;
+color: #ff851b;
+text-align: center;
+padding: 14px;
+
+}
+.contenedor .form .form-header .form-title span{
+   color: #ffffff;
+    }
+.contenedor .form{
+    background: rgba(0,0,0,.3);
+    width: 90%;
+    max-width: 650px;
+    margin: initial;
+    padding: 5px 35px;
+    margin-top: 30 px;
+    padding-bottom: 38 px;
+    border-radius: 3px;
+}
+.contenedor .form .form-label{
+    display: block;
+    color: white;
+    font-size: 16px;
+    font-family: Roboto;
+    position: relative;
+}
+.contenedor .input{
+    color: white;
+}
+.contenedor .form .form-input, .form-textarea{
+    background: rgba(0,0,0,.4);
+    border: none;
+    outline: none;
+    border-bottom: 7px solid #ff851b;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #fff;
+    font-family: Roboto;
+}
+.contenedor .form .form-textarea{
+    resize: vertical;
+    max-height: 150px;
+    min-height: 50px;
+}
+.contenedor .form .btn-submit{
+    width: 100%;
+    font-family: Roboto;
+    outline: none;
+    background: #ff851b;
+    font-size: 16px;
+    border: none;
+    color:#fff;
+    padding: 15px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.contenedor .form .btn-submit:hover{
+    background-color: #0ca2cf;
+
+}
+
+ .iframe{
+    float: right;
+   
+}
+.font .p{
+    border-color: rgb(255, 253, 253);
+    border-width: 5px;
+    border:1px solid red ;
+}
+
+/*Texto del inicio*/
+.columna{
+    /*background: rgba(0,0,0,.4);*/
+    color: white;
+    align: right;
+    width: 100%;
+    margin-left: 1.5%;
+    margin-right: 15%;
+}
+.texto{
+    display: flex;
+    margin: 10px;
+}
+

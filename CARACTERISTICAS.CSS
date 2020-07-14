@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+}
+.cont1{
+    width: 100%;
+    height: 500px;
+}
+.fondoss{
+    
+    
+}
+.cont2{
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    display: inline-table;
+    align-items: left;
+    justify-content: left;
+}
+.titulo1 , .titulo2 , .titulo3 , .titulo4 , .titulo5 , .titulo6 , .titulo7 , .titulo8 , .titulo9 , .titulo10 {
+    color: rgb(252, 252, 252);
+    font-size: 30px;
+ border ;
+}
+
+
+
+
